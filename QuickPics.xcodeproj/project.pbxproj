@@ -39,6 +39,7 @@
 		3E7A2E0D2AB7AC110029BA94 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A2E0C2AB7AC110029BA94 /* BaseViewModel.swift */; };
 		3E7A2E102AB7ADB70029BA94 /* ImageCacheManagerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A2E0F2AB7ADB60029BA94 /* ImageCacheManagerError.swift */; };
 		3E7A2E122AB7B0850029BA94 /* ClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A2E112AB7B0850029BA94 /* ClientError.swift */; };
+		3E7A2E152AB7B5B40029BA94 /* CUIPageComponents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E7A2E142AB7B5B40029BA94 /* CUIPageComponents.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -94,6 +95,7 @@
 		3E7A2E0C2AB7AC110029BA94 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		3E7A2E0F2AB7ADB60029BA94 /* ImageCacheManagerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCacheManagerError.swift; sourceTree = "<group>"; };
 		3E7A2E112AB7B0850029BA94 /* ClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientError.swift; sourceTree = "<group>"; };
+		3E7A2E142AB7B5B40029BA94 /* CUIPageComponents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CUIPageComponents.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,6 +186,7 @@
 		3E7A2DBB2AB747170029BA94 /* CoreUI */ = {
 			isa = PBXGroup;
 			children = (
+				3E7A2E132AB7B5A20029BA94 /* PageComponents */,
 				3E7A2DED2AB7A6010029BA94 /* Images */,
 			);
 			path = CoreUI;
@@ -346,6 +349,14 @@
 			path = Errors;
 			sourceTree = "<group>";
 		};
+		3E7A2E132AB7B5A20029BA94 /* PageComponents */ = {
+			isa = PBXGroup;
+			children = (
+				3E7A2E142AB7B5B40029BA94 /* CUIPageComponents.swift */,
+			);
+			path = PageComponents;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -497,6 +508,7 @@
 				3E7A2DFA2AB7A7620029BA94 /* ImageService.swift in Sources */,
 				3E7A2DF62AB7A6CC0029BA94 /* Unsplash+Image.swift in Sources */,
 				3E7A2DFF2AB7A7BE0029BA94 /* CUIImage+Url.swift in Sources */,
+				3E7A2E152AB7B5B40029BA94 /* CUIPageComponents.swift in Sources */,
 				3E7A2DEF2AB7A6100029BA94 /* CUIImage.swift in Sources */,
 				3E7A2E032AB7A8D00029BA94 /* CUIimage+User.swift in Sources */,
 				3E7A2DD02AB74ABB0029BA94 /* HTTPMethod.swift in Sources */,

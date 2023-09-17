@@ -16,9 +16,12 @@ extension ScenePhotoList {
         @Published var isSomethingWentWrongShown = false
         @Published var viewedImage: Unsplash.ImageData? = nil
         
+        @Published var isLoadingNextPage = false
+        
         func fetchNextImages() async {
             do {
                 guard let clients else { return }
+                isLoadingNextPage = true
                 let data = try await clients.clientNetwork.request(
                     [Unsplash.ImageData].self,
                     on: UnsplashService.getImages(
@@ -31,6 +34,7 @@ extension ScenePhotoList {
             } catch {
                 isSomethingWentWrongShown = true
             }
+            isLoadingNextPage = false
         }
         
         func hideAlert() {

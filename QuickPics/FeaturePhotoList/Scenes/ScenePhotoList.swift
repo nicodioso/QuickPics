@@ -20,6 +20,12 @@ struct ScenePhotoList: View {
                             viewModel.handleTap(of: one)
                         }
                 }
+                
+                CUIPageComponents.PaginationLoader(isLoading: viewModel.isLoadingNextPage) {
+                    Task {
+                        await viewModel.fetchNextImages()
+                    }
+                }
             }
             .padding(.horizontal, 20)
         }
