@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+@MainActor
 class ImageCacheMgr: BaseViewModel {
     
     static let shared = ImageCacheMgr()

@@ -32,6 +32,7 @@ extension ScenePhotoList {
                 currentPage += 1
                 imageData += data
             } catch {
+                print("Error:", error)
                 isSomethingWentWrongShown = true
             }
             isLoadingNextPage = false
