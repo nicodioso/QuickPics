@@ -29,6 +29,7 @@ struct ScenePhotoList: View {
             }
             .padding(.horizontal, 20)
         }
+        .paginatedScrollView()
         .overlay {
             if viewModel.imageData.isEmpty {
                 Text("No images")
